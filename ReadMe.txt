@@ -1,7 +1,6 @@
-NOTE: I carried out changes mentioned to address bug of enemy floating when it dies, however it continues to persist. Additionally, shooting effects for 
-enemy are added only when enemy shot hits player, since the constant sound off firing bullets was too much for 5 bullets a second.
 
-Part 0: Missing parts from player script were implemented according to tutorial. Reloading was completed in the 'ReloadEvent fnc'. Hand mag is triggered
+
+Part 0: Reloading was completed in the 'ReloadEvent fnc'. Hand mag is triggered
 
 in animation by trigger event number, appears while reloading and disappears after.
 
@@ -38,9 +37,6 @@ Part 1.1.5
 The game environment consists of 3 rooms and 3 enemies. An escape door is implemented in the last room. When the player reaches within a certain distance of 
 this door, the "DoorTrig" function the CharacterMovement script is called. This moves the camera back to its final position, and restarts the game in 10 
 seconds. This also happens when the player dies
-
-
-BONUS
 
 Part 1.2.1
 A ammo crate was added to the 2nd room. If the player reaches within a certain distance of this crate, the player's ammo is refilled. This is implemented
